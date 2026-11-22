@@ -1,0 +1,20 @@
+:root { --bg: #FFF8EE; --ink: #2B2118; --muted: #7A6656; --card: #FFFFFF; --line: #2B2118; --accent: #FFE14D; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1E1914; --ink: #F5EDE3; --muted: #BBA996; --card: #2A231C; --line: #F5EDE3; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif; line-height: 1.7; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+.hero { text-align: center; margin-bottom: 28px; }
+.badge { font-size: 56px; }
+h1 { margin: 8px 0; font-size: clamp(32px, 6vw, 48px); }
+h1 span { display: inline-block; background: var(--accent); color: #2B2118; border: 3px solid #2B2118; border-radius: 14px; padding: 0 12px; margin-left: 6px; font-size: 0.7em; vertical-align: middle; }
+.lead { color: var(--muted); }
+.card { background: var(--card); border: 3px solid var(--line); border-radius: 20px; padding: 20px 22px; margin: 18px 0; box-shadow: 0 6px 0 var(--line); }
+h2 { margin-top: 0; font-size: 20px; }
+.doc h2 { margin-top: 28px; }
+.cast { list-style: none; padding: 0; margin: 0; }
+.cast li { padding: 6px 0; }
+.cast b { display: inline-block; color: #fff; border-radius: 999px; padding: 2px 12px; margin-right: 8px; font-size: 14px; }
+a { color: inherit; }
+.links { font-weight: 700; }
+.muted { color: var(--muted); }
+footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 32px; }
